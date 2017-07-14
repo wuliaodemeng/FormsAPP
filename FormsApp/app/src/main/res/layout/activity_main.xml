@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.formsapp.MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="72.5dp"
+        android:layout_height="42dp"
+        android:textColor="#FFFFFF"
+        android:text="登录"
+        android:textSize="36sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="87dp"
+        android:layout_marginLeft="144dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="144dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="511.3dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="20dp"
+        android:text="企业环境风险评估系统 "
+        android:textColor="#FFE5F5FE"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="139dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="481.3dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="247dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="337.3dp"
+        app:layout_constraintVertical_bias="0.0"
+        >
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="17dp"
+                android:text="请输入用户名："
+                android:textColor="#FF878787"
+                android:textSize="14sp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <EditText
+                android:layout_width="144dp"
+                android:layout_height="33dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@null"
+                android:layout_marginRight="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/editText1"
+                tools:layout_editor_absoluteY="11dp"
+                tools:layout_editor_absoluteX="120dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="313dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="271.3dp"
+        app:layout_constraintVertical_bias="0.0"
+        >
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="86dp"
+                android:layout_height="17dp"
+                android:text="请输入密码："
+                android:textColor="#FF878787"
+                android:textSize="14sp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="174dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="21dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:layout_width="144dp"
+            android:layout_height="33dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@null"
+            android:id="@+id/editText2"
+            tools:layout_editor_absoluteY="11dp"
+            tools:layout_editor_absoluteX="120dp" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:layout_width="279dp"
+        android:layout_height="58.5dp"
+        android:background="#FF23D28E"
+        android:id="@+id/button"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="409dp"
+        android:layout_marginLeft="40.5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="40.5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="172.8dp"
+        app:layout_constraintVertical_bias="0.0"
+
+        android:text="登录"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        >
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="280dp"
+        android:layout_height="14dp"
+        android:text="苏州大学"
+        android:textColor="#FFEDEDED"
+        android:textSize="12sp"
+
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="76.3dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="280dp"
+        android:layout_height="14dp"
+        android:text="苏州英瀚时信息科技有限公司"
+        android:textColor="#FFEDEDED"
+        android:textSize="12sp"
+
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="572dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="54.3dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="280dp"
+        android:layout_height="14dp"
+        android:text="技术支持"
+        android:textColor="#FFEDEDED"
+        android:textSize="12sp"
+
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="594dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32.3dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

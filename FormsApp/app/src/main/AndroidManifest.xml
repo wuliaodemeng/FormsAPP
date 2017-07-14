@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.formsapp">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FormsApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".Form0"></activity>
+        <activity android:name=".Form_0"></activity>
+        <activity android:name=".Form1"></activity>
+        <activity android:name=".Form_1">
+            <action android:name="com.example.administrator.formsapp.FORM_1"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </activity>
+        <activity android:name=".Form2"></activity>
+        <activity android:name=".Form_2">
+            <action android:name="com.example.administrator.formsapp.FORM_2"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </activity>
+        <activity android:name=".Form3">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Form_3"></activity>
+        <activity android:name=".Form4"></activity>
+        <activity android:name=".Form_4"></activity>
+        <activity android:name=".Form5"></activity>
+        <activity android:name=".Form_5"></activity>
+        <activity android:name=".Form6"></activity>
+        <activity android:name=".Form_6"></activity>
+        <activity android:name=".Form7"></activity>
+        <activity android:name=".Form_7"></activity>
+        <activity android:name=".Form8"></activity>
+        <activity android:name=".Form_8"></activity>
+        <activity android:name=".Form9"></activity>
+        <activity android:name=".Form_9"></activity>
+        <activity android:name=".Form10"></activity>
+        <activity android:name=".Form_10"></activity>
+        <activity android:name=".Form11"></activity>
+        <activity android:name=".Form_11"></activity>
+        <activity android:name=".Form_12"></activity>
+        <activity android:name=".Photo"></activity>
+
+        <activity android:name=".Test">
+            <intent-filter>
+                <action android:name="com.example.administrator.formsapp.TEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:authorities="com.example.administrator.formsapp.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>
