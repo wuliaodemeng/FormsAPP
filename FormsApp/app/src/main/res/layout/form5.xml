@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n主要原料、中间体、产品(可复选)。\n\n"
+                        />
+
+                    <TextView
+                        android:id="@+id/text52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n是否为易燃、易爆、剧毒品、腐蚀品。\n\n"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkbox51"
+                        android:textSize="24sp"
+                        android:text="易燃品"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkbox52"
+                        android:textSize="24sp"
+                        android:text="易爆品"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:id="@+id/checkbox53"
+                        android:text="剧毒品"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:id="@+id/checkbox54"
+                        android:text="腐蚀品"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text53"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n是否构成重大危险源。\n\n"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text54"
+                        android:textSize="24sp"
+                        android:text="评估依据：\nq/Q(可参照环境风险评价相关资料)。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/button55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="q/Q 小于 1"
+                            android:textSize="24sp" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button56"
+                            android:textSize="24sp"
+                            android:text="q/Q 大于等于 1"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button57"
+                            android:textSize="24sp"
+                            android:text="q/Q 大于等于 1.2"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button58"
+                            android:textSize="24sp"
+                            android:text="q/Q 大于等于 1.5"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text55"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n生产装置最高温度(除锅炉、冷却塔、导热油炉等公用辅助设备)。\n\n"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text56"
+                        android:textSize="24sp"
+                        android:text="评估依据：\nT。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button59"
+                            android:textSize="24sp"
+                            android:text="T 大于等于 300℃"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button510"
+                            android:textSize="24sp"
+                            android:text="T 小于等于 -30℃"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button511"
+                            android:textSize="24sp"
+                            android:text=" T 大于-30℃ 且 小于 300℃"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/tab4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text57"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n最高压力。\n\n"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text58"
+                        android:textSize="24sp"
+                        android:text="评估依据：\nP。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button512"
+                            android:textSize="24sp"
+                            android:text="P 小于 10MPA"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button513"
+                            android:textSize="24sp"
+                            android:text="P 大于10MPA 且 小于100MPA"/>
+                        <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button514"
+                        android:textSize="24sp"
+                        android:text="P 大于等于 100MPA"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button515"
+                            android:textSize="24sp"
+                            android:text="以上情况以外"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text59"
+                        android:textSize="24sp"
+                        android:text="评估内容及依据：\n涉及光气及光气化工艺、电解工艺(氯碱)、氯化工艺、硝化工艺、合成氨工艺、裂解(裂化)工艺、氟化工艺、加氢工艺、重氮化工艺、氧化工艺、过氧化工艺、胺基化工艺、磺化工艺、聚合工艺、烷基化工艺、新型煤化工工艺、电石生产工艺、偶氮化工艺\n\n"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button516"
+                            android:textSize="24sp"
+                            android:text="有"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button517"
+                            android:textSize="24sp"
+                            android:text="无"/>
+                    </RadioGroup>
+
+                    <ImageButton
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/next"
+                        android:id="@+id/image_button"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
+

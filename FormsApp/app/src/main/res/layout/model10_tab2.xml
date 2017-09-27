@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="440dp"
+    android:background="#FFFFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="389dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="103dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="19dp"
+
+            android:gravity="center"
+            android:text="环境应急资源、企业周围环境"
+            android:textColor="#FF555454"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="286dp"
+            android:layout_height="74dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="73dp"
+            android:text="是否与其他组织或单位签订应急救援协议或互救协议(包括应急物资、应急装备和救援队伍等情况)?"
+            android:textColor="#FF555454"
+            android:textSize="14sp"
+            android:lineSpacingExtra="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="214dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            android:layout_marginRight="25dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.007"
+            android:layout_marginBottom="49dp"
+            android:id="@+id/linearLayout">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:button="@null" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="17dp"
+            android:text="是"
+            android:textColor="#FF878787"
+            android:textSize="14sp"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            android:layout_marginStart="7dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="19dp"
+            app:layout_constraintLeft_toRightOf="@+id/linearLayout"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/textView14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="17dp"
+            android:text="否"
+            android:textColor="#FF878787"
+            android:textSize="14sp"
+            android:id="@+id/textView13"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintRight_toRightOf="@+id/textView14"
+            android:layout_marginTop="150dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="149dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/textView12"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="1.0" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="#FFFFFFFF"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="412dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="109dp"
+            app:layout_constraintVertical_bias="0.218"
+            tools:layout_constraintRight_creator="1"
+            android:id="@+id/constraintLayout"
+            tools:layout_constraintLeft_creator="1">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="14dp"
+                android:text="添加描述说明……"
+                android:textColor="#FF878787"
+                android:textSize="12sp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="221dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="221dp"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_constraintBottom_creator="1"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <EditText
+                android:layout_width="166dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="55dp"
+                app:layout_constraintVertical_bias="0.545"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@null"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_constraintBottom_creator="1"
+                android:layout_marginEnd="55dp" />
+
+            <ImageButton
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/upload_picture"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="291dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="23dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="291dp"
+                android:layout_marginEnd="23dp"
+                android:id="@+id/imageButton"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_constraintBottom_creator="1"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
+
