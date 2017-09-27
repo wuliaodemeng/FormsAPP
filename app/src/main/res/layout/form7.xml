@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text71"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n厂区、车间环境整洁，无严重的滴、漏、跑、冒现象。\n\n"
+                        />
+
+                    <TextView
+                        android:id="@+id/text72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n现场勘查。\n\n"
+                        />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button71"
+                            android:textSize="24sp"
+                            android:text="无"/>
+                        <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button72"
+                        android:textSize="24sp"
+                        android:text="小于5处"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button73"
+                            android:textSize="24sp"
+                            android:text="大于5处或严重"/>
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TabHost
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tabhost1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/tab21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/text73"
+                                        android:textSize="24sp"
+                                        android:text="评估内容：\n是否涉及挥发性有机物、重金属、其他持久性污染物。\n\n"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/text74"
+                                        android:textSize="24sp"
+                                        android:text="评估依据：\n是否涉及。\n\n"/>
+                                    <RadioGroup
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <RadioButton
+                                            android:id="@+id/button74"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="其中3项"
+                                            android:textSize="24sp" />
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button75"
+                                            android:textSize="24sp"
+                                            android:text="其中2项"/>
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button76"
+                                            android:textSize="24sp"
+                                            android:text="其中1项"/>
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button77"
+                                            android:textSize="24sp"
+                                            android:text="无"/>
+
+                                    </RadioGroup>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tab22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/text75"
+                                        android:textSize="24sp"
+                                        android:text="评估内容：\n废气环保设备日常监管及例行监测记录。\n\n"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/text76"
+                                        android:textSize="24sp"
+                                        android:text="评估依据：\n废气环保设备是否正常运行是否有例行监测数据(监测因子参照排污许可证或环评文件)。\n\n"/>
+                                    <RadioGroup
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button78"
+                                            android:textSize="24sp"
+                                            android:text="均符合"/>
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button79"
+                                            android:textSize="24sp"
+                                            android:text="符合一项"/>
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button710"
+                                            android:textSize="24sp"
+                                            android:text="2项均不符合"/>
+
+                                    </RadioGroup>
+
+                                </LinearLayout>
+
+
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TabHost
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tabhost2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/tab31"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/text77"
+                                        android:textSize="24sp"
+                                        android:text="评估内容：\n有毒有害、持久性污染物、一类污染物。\n\n"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/text78"
+                                        android:textSize="24sp"
+                                        android:text="评估依据：\n是否涉及。\n\n"/>
+                                    <RadioGroup
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <RadioButton
+                                            android:id="@+id/button711"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="其中3项"
+                                            android:textSize="24sp" />
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button712"
+                                            android:textSize="24sp"
+                                            android:text="其中2项"/>
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button713"
+                                            android:textSize="24sp"
+                                            android:text="其中1项"/>
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button714"
+                                            android:textSize="24sp"
+                                            android:text="无"/>
+
+                                    </RadioGroup>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tab32"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/text79"
+                                        android:textSize="24sp"
+                                        android:text="评估内容：\n废气环保设备日常监管及例行监测记录。\n\n"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/text710"
+                                        android:textSize="24sp"
+                                        android:text="评估依据：\n废气环保设备是否正常运行是否有例行监测数据(监测因子参照排污许可证或环评文件)。\n\n"/>
+                                    <RadioGroup
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button715"
+                                            android:textSize="24sp"
+                                            android:text="均符合"/>
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button716"
+                                            android:textSize="24sp"
+                                            android:text="符合一项"/>
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/button717"
+                                            android:textSize="24sp"
+                                            android:text="2项均不符合"/>
+                                    </RadioGroup>
+                                    <ImageButton
+                                        android:layout_width="70dip"
+                                        android:layout_height="70dip"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/next"
+                                        android:id="@+id/image_button"
+                                        android:scaleType="fitXY"/>
+
+                                </LinearLayout>
+
+
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
+
+

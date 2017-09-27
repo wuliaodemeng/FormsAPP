@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="评估内容：\nEHS管理体系(ISO14000)。\n\n"
+                        />
+
+                    <TextView
+                        android:id="@+id/text22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n有无。\n\n"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </RadioGroup>
+
+                    <RadioButton
+                        android:id="@+id/button21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="有"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/button22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="无"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text23"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n环境风险防控和应急措施制度。\n\n"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text24"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n是否按有关要求制定、编制环境应急预案，并按环保部门要求进行备案。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button23"
+                            android:textSize="24sp"
+                            android:text=" 未形成文件的"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button24"
+                            android:textSize="24sp"
+                            android:text="未按规定编制的"/>
+                        <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button25"
+                        android:textSize="24sp"
+                        android:text=" 未按规定备案的"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button26"
+                            android:textSize="24sp"
+                            android:text="按规定编制及备案的"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text25"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n环境风险管理制度落实情况。\n\n"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text26"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n①环境风险防控重点岗位的责任人或责任机构\n②定期巡检和维护责任制度\n③应急演练证明材料\n④是否定期宣传和培训。\n"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text27"
+                        android:textSize="24sp"
+                        android:text="欠缺的项目数"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/take_photo"
+                        android:text="拍照"/>
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choose_picture"
+                        android:text="相册选取"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/picture"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/next"
+                        android:id="@+id/image_button"
+                        android:scaleType="fitXY"/>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

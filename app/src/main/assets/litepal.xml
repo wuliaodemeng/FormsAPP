@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Forms"></dbname>
+    <version value="5"></version>
+
+    <list>
+        <mapping class="com.example.administrator.formsapp.FormDataUnit"></mapping>
+        <mapping class="com.example.administrator.formsapp.CommonDataUnit"></mapping>
+        <mapping class="com.example.administrator.formsapp.MiningDataUnit"></mapping>
+    </list>
+
+    <storage value="external"/>
+</litepal>

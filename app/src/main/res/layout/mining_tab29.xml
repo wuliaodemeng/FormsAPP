@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="440dp"
+    android:background="#FFFFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="213dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="389dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="103dp"
+            android:layout_marginStart="25dp"
+
+            android:layout_marginTop="19dp"
+            android:gravity="center_vertical"
+            android:text="储运系统"
+            android:textColor="#FF555454"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="286dp"
+            android:layout_height="250dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="73dp"
+            android:lineSpacingExtra="8dp"
+            android:text="炸药、雷管储存:\n（1）设有监控设备及值班室，监控设备应24小时有人负责监控\n（2）执行严格出入库检查、登记制度，收存和发放爆炸物品必须进行登记，做到账目清楚，账物相符\n（3）炸药装卸运输人员佩戴相应的防护用品，规范操作\n（4）通风、防潮，温度、湿度控制在适宜物品存放的范围"
+            android:textColor="#FF555454"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="293dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="0dp"
+            android:background="#FFFFFFFF"
+            android:gravity="center_vertical"
+            android:hint="欠缺的项目数……"
+            android:textColor="#FF878787"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="#FFFFFFFF"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="412dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="109dp"
+            app:layout_constraintVertical_bias="0.226"
+            tools:layout_constraintRight_creator="1"
+            android:id="@+id/constraintLayout"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintHorizontal_bias="0.0">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="14dp"
+                android:text="添加描述说明……"
+                android:textColor="#FF878787"
+                android:textSize="12sp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="221dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="221dp"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_constraintBottom_creator="1"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <EditText
+                android:id="@+id/decription"
+                android:layout_width="166dp"
+                android:layout_height="29dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginRight="55dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.545"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginLeft="291dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginStart="291dp"
+                android:background="#FFFFFF"
+                android:focusableInTouchMode="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_editor_absoluteY="4dp"
+                tools:layout_editor_absoluteX="292dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

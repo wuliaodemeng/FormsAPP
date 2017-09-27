@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n动火、特种,操作工 (焊工、电工)。\n\n"
+                        />
+
+                    <TextView
+                        android:id="@+id/text62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n操作人员是否取得,操作相关设备资质。\n\n"
+                        />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button61"
+                            android:textSize="24sp"
+                            android:text="有"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button62"
+                            android:textSize="24sp"
+                            android:text="无"/>
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text63"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n已配备环保设备的生产设施日常运行维护和管理记录。\n\n"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text64"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n维护稳定，规范并留有相关记录。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/button63"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="是"
+                            android:textSize="24sp" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button64"
+                            android:textSize="24sp"
+                            android:text="否"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text65"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n防雷措施。\n\n"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text66"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n建筑物及设备是否采用相应防雷设施。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button65"
+                            android:textSize="24sp"
+                            android:text="是或无要求"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button66"
+                            android:textSize="24sp"
+                            android:text="否"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/tab4">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text67"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n防静电措施。\n\n"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text68"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n设备是否已采用防静电措施。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button67"
+                            android:textSize="24sp"
+                            android:text=" 是或无要求"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button68"
+                            android:textSize="24sp"
+                            android:text="否"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text69"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n防爆措施。\n\n"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text610"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n设备、线路是否采用防爆设施。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button69"
+                            android:textSize="24sp"
+                            android:text="是或无要求"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button610"
+                            android:textSize="24sp"
+                            android:text="否"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tab6"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text611"
+                        android:textSize="24sp"
+                        android:text="评估内容：\n火灾、报警。\n\n"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text612"
+                        android:textSize="24sp"
+                        android:text="评估依据：\n火灾、报警是否完备。\n\n"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button611"
+                            android:textSize="24sp"
+                            android:text="有且自动"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button612"
+                            android:textSize="24sp"
+                            android:text="有，手动"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button613"
+                            android:textSize="24sp"
+                            android:text="无"/>
+                    </RadioGroup>
+
+                    <ImageButton
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/next"
+                        android:id="@+id/image_button"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
+

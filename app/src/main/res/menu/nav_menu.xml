@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="姓名"
+            android:icon="@drawable/user_image"
+            android:id="@+id/nav_name"></item>
+        <item android:id="@+id/nav_call"
+            android:icon="@drawable/phone"
+            android:title="手机号码"></item>
+        <item android:title="家庭住址"
+            android:icon="@drawable/home"
+            android:id="@+id/nav_home"></item>
+        <item android:title="邮箱"
+            android:icon="@drawable/email"
+            android:id="@+id/nav_email"></item>
+    </group>
+
+</menu>

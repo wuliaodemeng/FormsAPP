@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="440dp"
+    android:background="#FFFFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="213dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="389dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="103dp"
+            android:layout_marginStart="25dp"
+
+            android:layout_marginTop="19dp"
+            android:gravity="center_vertical"
+            android:text="尾矿库"
+            android:textColor="#FF555454"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="286dp"
+            android:layout_height="270dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="51dp"
+            android:lineSpacingExtra="8dp"
+            android:text="其他措施：（1）设置尾矿库管理机构，配备专业人员和管理干部，建立尾矿库安全操作制度；（2）从事尾矿库放矿、筑坝、排洪和防渗设施操作的专职人员取得特种作业人员资格证书；（3）建有坝体及库内位移、沉降观测、浸润线检测系统；（4）建立巡坝护坝制度（防洪安全检查、尾矿坝安全检查、尾矿库库区安全检查）；（5）每年组织对尾矿库进行1-2次安全专业鉴定；（6）发生特大洪水、暴雨、强烈地震及重大事故后，组织对尾矿库进行特别检查；（7）尾矿库物资和设备设置专人看管，物资配备齐全；（8）设有地下水跟踪监测点位（至少三个：沿地下水流向上游、下游，可能受污染区域周边）。"
+            android:textColor="#FF555454"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="293dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="0dp"
+            android:background="#FFFFFFFF"
+            android:gravity="center_vertical"
+            android:hint="欠缺的项目数……"
+            android:textColor="#FF878787"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="#FFFFFFFF"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="412dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="109dp"
+            app:layout_constraintVertical_bias="0.226"
+            tools:layout_constraintRight_creator="1"
+            android:id="@+id/constraintLayout"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintHorizontal_bias="0.0">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="14dp"
+                android:text="添加描述说明……"
+                android:textColor="#FF878787"
+                android:textSize="12sp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="221dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="221dp"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_constraintBottom_creator="1"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <EditText
+                android:id="@+id/decription"
+                android:layout_width="166dp"
+                android:layout_height="29dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginRight="55dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.545"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginLeft="291dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginStart="291dp"
+                android:background="#FFFFFF"
+                android:focusableInTouchMode="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_editor_absoluteY="4dp"
+                tools:layout_editor_absoluteX="292dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
